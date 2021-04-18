@@ -1,0 +1,9 @@
+axelerant.route:
+  path: "/page_json/{api_key}/{nid}"
+  defaults:
+    _controller: 'Drupal\axelerant\Controller\PageContent::get'
+    _title: 'Get Page JSON'
+  options:
+    no_cache: TRUE
+  requirements:
+    _permission: "access content"
